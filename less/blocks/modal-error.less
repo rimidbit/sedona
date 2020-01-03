@@ -1,0 +1,51 @@
+.modal-error {
+  width: 320px;
+  padding: 50px 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+}
+
+.modal-error__head {
+  font-size: @fontSize + 4px;
+  font-weight: 800;
+  line-height: 26px;
+  margin: 0;
+}
+
+.modal-error__explanation {
+  margin: 40px 0;
+  line-height: 24px;
+  padding: 0 55px;
+}
+
+.modal-error .button {
+  width: 180px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-error {
+    width: 400px;
+    padding: 50px;
+  }
+
+  .modal-error__head {
+    font-size: @fontSize + 16px;
+    padding: 0 30px;
+  }
+
+  .modal-error__explanation {
+    padding: 0;
+  }
+
+  .modal-error .button {
+    width: 270px;
+  }
+}

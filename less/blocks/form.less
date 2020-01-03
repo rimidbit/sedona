@@ -1,0 +1,377 @@
+.form {
+  .formSideMargins();
+}
+
+.form__title {
+  .title();
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+
+.form__title--personality {
+  margin-bottom: 22px;
+}
+
+.form__title--contacts {
+  margin-bottom: 27px;
+}
+
+.form__title--attractions {
+  margin-bottom: 40px;
+}
+
+.form__title--emotions {
+  margin-bottom: 14px;
+}
+
+.form__personality {
+  margin-bottom: 42px;
+}
+
+.form__personality-label {
+  text-transform: uppercase;
+  margin-top: 18px;
+  line-height: 14px;
+  color: @colorText;
+  display: flex;
+  align-items: center;
+}
+
+.form__personality-input,
+.form__contacts-input,
+.form__emotions-text{
+  .placeholder({
+    font-weight: 800;
+    color: #000;
+    font-size: @fontSize + 4px;
+    line-height: 24px;
+  })
+}
+
+.form__personality-input {
+  margin-left: 25px;
+  border: transparent;
+}
+
+.form__contacts {
+  margin-bottom: 45px;
+}
+
+.form__contacts-item {
+  position: relative;
+}
+
+.form__contacts-item--phone::after,
+.form__contacts-item--mail::after {
+  width: 60px;
+  height: 60px;
+  background-color: #e5e5e5;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__contacts-item--phone::after {
+  content: url("../img/icon-phone.svg");
+}
+
+.form__contacts-item--mail::after {
+  content: url("../img/icon-mail.svg");
+}
+
+.form__contacts-label {
+  margin-top: 14px;
+  margin-left: 22px;
+  text-transform: uppercase;
+  line-height: 14px;
+  display: block;
+}
+
+.form__contacts-input,
+.form__personality-input {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 22px;
+  background-color: @bgInput;
+}
+
+.form__personality-input {
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.form__contacts-input {
+  border: transparent;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.form__impression {
+  margin-bottom: 70px;
+}
+
+.form__impression-item {
+  margin-top: 45px;
+}
+
+.form__impression-item--negative {
+  margin-top: 55px;
+}
+
+.form__impression-item--undefined {
+  margin-top: 54px;
+}
+
+.form__impression-label,
+.form__attractions-label {
+  display: block;
+  font-weight: 800;/*
+  margin-top: 55px;*/
+  padding-left: 78px;
+  line-height: 14px;
+  position: relative;
+  cursor: pointer;
+  font-size: @fontSize + 4px;
+}
+
+.form__attractions-item {
+  padding-bottom: 52px;
+}
+
+.form__attractions-label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form__attractions-label::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 55px;
+  height: 55px;
+  background-color: @bgInput;
+  border-radius: 5%;
+}
+
+.form__attractions-input:checked + label::after {
+  content: url("../img/icon-tick.svg");
+  position: absolute;
+  top: -2px;
+  left: 16px;
+}
+/*
+.form__impression-label {
+  padding-left: 80px;
+}*/
+
+.form__impression-label::before,
+.form__impression-input:checked + label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.form__impression-label::before {
+  top: -20px;
+  left: 2px;
+  width: 55px;
+  height: 55px;
+  background-color: @bgInput;
+}
+
+.form__impression-input:checked + label::after {
+  top: -3px;
+  left: 18px;
+  width: 22px;
+  height: 22px;
+  background-color: #363636;
+}
+
+.form__emotions {
+  margin-bottom: 50px;
+}
+
+.form__emotions-text {
+  display: block;
+  width: 100%;
+  height: 160px;
+/*  margin-top: 55px;
+*/  padding-top: 20px;
+  padding-left: 20px;
+  border: transparent;
+  resize: none;
+  background-color: @bgInput;
+}
+
+.form__placeholder {
+  display: none;
+  line-height: 14px;
+}
+
+.form .button {
+  width: 100%;
+  margin-bottom: 71px;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .photoSideTablet();
+  }
+
+  .form__personality {
+    /*margin-left: -5px;
+    margin-left: -5px;*/
+  }
+
+  .form__title {
+    font-size: @fontSize + 7px;
+  }
+
+  .form__impression {
+    order: -1;
+    margin-bottom: 60px;
+  }
+
+  .form__contacts,
+  .form__attractions,
+  .form__emotions {
+    width: 100%;
+  }
+
+  .form__title--personality,
+  .form__title--impression {
+    text-align: left;
+  }
+
+  .form__title--contacts {
+    margin-bottom: 31px;
+  }
+
+  .form__title--impression {
+    margin-bottom: 82px;
+  }
+
+  .form__title--personality {
+    margin-bottom: 58px;
+  }
+
+  .form__title--decor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 26px;
+  }
+
+  .form__title--decor {
+    .decorTitle();
+  }
+
+  .form__impression-item {
+    margin-top: 80px;
+  }
+
+  .form__impression-item--negative,
+  .form__impression-item--undefined {
+    margin-top: 65px;
+  }
+
+    .form__impression-label {
+   /* margin-top: 80px;*/
+    padding-left: 75px;
+  }
+
+  .form__personality-label {
+    margin-top: 20px;
+  }
+
+  .form__contacts-label {
+    margin-top: 24px;
+  }
+
+  .form__attractions-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .form__attractions-item {
+    flex-basis: 50%;
+  }
+
+  .form__placeholder {
+    display: block;
+    text-transform: uppercase;
+  }
+
+  .form__button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .form {
+    .photoSideDesktop();
+  }
+
+  .form__impression .form__title {
+    padding-left: 80px;
+  }
+
+  .form__personality {
+    width: 400px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .form__contacts-item {
+    display: flex;
+    align-items: center;
+  }
+
+  .form__contacts-input {
+    width: 320px;
+  }
+
+  .form__contacts-label {
+    margin-right: 15px;
+  }
+
+  .form__attractions-wrapper {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .form__attractions-item {
+    flex-basis: auto;
+  }
+
+  .form__title--decor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 26px;
+  }
+
+  .form__title--decor {
+    .decorTitle();
+  }
+}

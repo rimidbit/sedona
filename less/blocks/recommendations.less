@@ -1,0 +1,127 @@
+.recommendations {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  padding-bottom: 20px;
+
+}
+
+.recommendations__item {
+/*  margin-top: 41px;*/
+  padding-left: 71px;
+  padding-right: 42px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.recommendations__title {
+  .title();
+  line-height: 18px;
+  margin-top: 34px;
+}
+
+.recommendations__title--food::before,
+.recommendations__title--souvenirs::before,
+.recommendations__title--housing::before {
+  display: block;
+  position: absolute;
+  left: 21px;
+}
+
+.recommendations__title--housing::before {
+  content: url("../img/icon-house.svg");
+  top: -13px;
+  width: 37px;
+  height: 37px;
+}
+
+.recommendations__title--souvenirs::before {
+  content: url("../img/icon-gift.svg");
+  top: -15px;
+  width: 33px;
+  height: 38px;
+}
+
+.recommendations__title--food::before {
+  content: url("../img/icon-burger.svg");
+  top: -10px;
+  width: 37px;
+  height: 35px;
+}
+
+.recommendations__description {
+  line-height: 21px;
+}
+
+.recommendations__description--new-line {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .recommendations {
+    display: flex;
+    align-items: flex-end;
+    padding-top: 58px;
+    padding-bottom: 61px;
+  }
+
+  .recommendations__item {
+    margin-top: 0;
+    padding: 0 44px;
+    text-align: center;
+    width: 33%;
+  }
+
+  .recommendations__title {
+    font-size: @fontSize + 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .recommendations__description {
+    margin-bottom: 0;
+  }
+
+  .recommendations__item:nth-child(2) {
+    order: 2;
+  }
+
+  .recommendations__description--food {
+    padding: 0 5px;
+  }
+
+  .recommendations__title--food::before,
+  .recommendations__title--souvenirs::before,
+  .recommendations__title--housing::before {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .recommendations__title--housing::before {
+    width: 75px;
+    height: 72px;
+  }
+
+  .recommendations__title--souvenirs::before {
+    width: 61px;
+    height: 72px;
+  }
+
+  .recommendations__title--food::before {
+    width: 76px;
+    height: 69px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .recommendations {
+    padding-bottom: 82px;
+  }
+
+  .recommendations__description--new-line {
+    display: block;
+  }
+}

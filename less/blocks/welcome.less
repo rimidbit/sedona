@@ -1,0 +1,113 @@
+.welcome {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 26px;
+  margin-top: -27px;
+  font-size: 0;
+}
+
+.welcome__images {
+  position: relative;
+  max-width: 320px;
+}
+
+.welcome__img-text {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  max-width: 280px;
+  height: auto;
+}
+
+.welcome__title {
+  .title();
+  margin-top: 30px;
+  padding: 0 33px;
+  line-height: 26px;
+}
+
+.welcome__title--form {
+  margin-top: 20px;
+}
+
+.welcome__text {
+  margin-top: 27px;
+  margin-bottom: 27px;
+  padding: 0 35px;
+  line-height: 26px;
+  font-size: @fontSize;
+}
+
+.welcome__text--photo {
+  padding: 0 20px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+
+.welcome__text--form {
+  margin-top: 26px;
+  margin-bottom: 37px;
+  padding: 0 20px;
+  line-height: 24px;
+}
+
+.welcome__text--new-line {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .welcome__images {
+    margin-bottom: 170px;/*временная мера*/
+  }
+
+  .welcome__images--photo,
+  .welcome__images--form {
+    margin-bottom: 190px;
+  }
+
+  .welcome__title {
+    padding: 0 170px;
+    line-height: 26px;
+    font-size: @fontSize + 7px;
+  }
+
+  .welcome__text--photo {
+    margin-top: 30px;
+    margin-bottom: 70px;
+  }
+
+  .welcome__title--form {
+    padding: 0 150px;
+    font-size: @fontSize + 16px;
+  }
+
+  .welcome__text--photo,
+  .welcome__text--form {
+    padding: 0 162px;
+  }
+
+  .welcome__text--form {
+    margin-top: 30px;
+    margin-bottom: 57px;
+  }
+
+  .welcome__text--new-line {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .welcome__images--photo {
+    margin-bottom: 238px;
+  }
+
+  .welcome__title {
+    padding: 0 370px;
+  }
+
+  .welcome__text--photo,
+  .welcome__text--form {
+    padding: 0 380px;
+  }
+}
