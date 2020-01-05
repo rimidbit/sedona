@@ -61,8 +61,17 @@
   &::before {
     content: "";
     display: block;
-    max-width: 150px;
+    width: 150px;
     height: 2px;
     background-color: @bgInput;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .decorTitle() {
+    &::after,
+    &::before {
+      width: 280px;
+    }
   }
 }

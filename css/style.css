@@ -499,11 +499,12 @@ img {
 .welcome__title {
   font-size: 18px;
   font-weight: 800;
-  margin-top: 30px;
+  margin-top: 24px;
   padding: 0 33px;
   line-height: 26px;
 }
-.welcome__title--form {
+.welcome__title--form,
+.welcome__title--photo {
   margin-top: 20px;
 }
 .welcome__text {
@@ -530,7 +531,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .welcome__images {
-    margin-bottom: 170px;
+    margin-bottom: 165px;
     /*временная мера*/
   }
   .welcome__images--photo,
@@ -542,11 +543,15 @@ img {
     line-height: 26px;
     font-size: 21px;
   }
+  .welcome__text {
+    margin-bottom: 50px;
+  }
   .welcome__text--photo {
     margin-top: 30px;
     margin-bottom: 70px;
   }
-  .welcome__title--form {
+  .welcome__title--form,
+  .welcome__title--photo {
     padding: 0 150px;
     font-size: 30px;
   }
@@ -563,7 +568,8 @@ img {
   }
 }
 @media screen and (min-width: 1280px) {
-  .welcome__images--photo {
+  .welcome__images--photo,
+  .welcome__images--form {
     margin-bottom: 238px;
   }
   .welcome__title {
@@ -572,6 +578,12 @@ img {
   .welcome__text--photo,
   .welcome__text--form {
     padding: 0 380px;
+  }
+  .welcome__text--form {
+    margin-bottom: 43px;
+  }
+  .welcome__text--photo {
+    margin-bottom: 70px;
   }
 }
 .advantages__text {
@@ -1475,6 +1487,12 @@ img {
   .form__emotions {
     width: 100%;
   }
+  .form__contacts {
+    margin-bottom: 33px;
+  }
+  .form__emotions {
+    margin-bottom: 57px;
+  }
   .form__title--personality,
   .form__title--impression {
     text-align: left;
@@ -1487,6 +1505,13 @@ img {
   }
   .form__title--personality {
     margin-bottom: 58px;
+  }
+  .form__title--attractions {
+    margin-bottom: 48px;
+  }
+  .form__title--emotions {
+    margin-top: 32px;
+    margin-bottom: 54px;
   }
   .form__title--decor {
     display: -webkit-box;
@@ -1504,7 +1529,7 @@ img {
   .form__title--decor::before {
     content: "";
     display: block;
-    max-width: 150px;
+    width: 150px;
     height: 2px;
     background-color: #f2f2f2;
   }
@@ -1526,8 +1551,9 @@ img {
     margin-top: 24px;
   }
   .form__attractions-wrapper {
-    width: 80%;
-    margin: 0 auto;
+    /*width: 80%;
+    margin: 0 auto;*/
+    padding-left: 88px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1538,11 +1564,14 @@ img {
             justify-content: center;
   }
   .form__attractions-item {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
+    margin-right: 70px;
+    padding-bottom: 45px;
+    width: 200px;
+    /*flex-basis: 50%;*/
   }
   .form__placeholder {
     display: block;
+    font-size: 14px;
     text-transform: uppercase;
   }
   .form__button-wrapper {
@@ -1556,6 +1585,11 @@ img {
         -ms-flex-align: center;
             align-items: center;
     width: 100%;
+    margin-bottom: 58px;
+  }
+  .form .button {
+    width: 325px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -1563,11 +1597,24 @@ img {
     margin-right: 120px;
     margin-left: 120px;
   }
-  .form__impression .form__title {
+  .form__title--impression {
     padding-left: 80px;
+  }
+  .form__title--contacts {
+    margin-top: 15px;
+    margin-bottom: 58px;
+  }
+  .form__title--attractions {
+    padding: 0 130px;
+  }
+  .form__title--emotions {
+    margin-top: 27px;
   }
   .form__personality {
     width: 400px;
+  }
+  .form__contacts {
+    margin-bottom: 36px;
   }
   .form__contacts-wrapper {
     display: -webkit-box;
@@ -1593,9 +1640,14 @@ img {
   }
   .form__contacts-label {
     margin-right: 15px;
+    margin-left: 0;
+  }
+  .form__contacts-label span {
+    display: none;
   }
   .form__attractions-wrapper {
-    width: 100%;
+    /*width: 100%;*/
+    padding-left: 0;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: justify;
@@ -1603,28 +1655,14 @@ img {
             justify-content: space-between;
   }
   .form__attractions-item {
-    -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+    width: auto;
+    margin-right: 0;
   }
-  .form__title--decor {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    line-height: 26px;
+  .form__button-wrapper {
+    margin-bottom: 65px;
   }
-  .form__title--decor::after,
-  .form__title--decor::before {
-    content: "";
-    display: block;
-    max-width: 150px;
-    height: 2px;
-    background-color: #f2f2f2;
+  .form .button {
+    width: 480px;
   }
 }
 .modal-sent {
