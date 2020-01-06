@@ -288,8 +288,13 @@
     line-height: 26px;
   }
 
-  .form__title--decor {
-    .decorTitle();
+  .form__title--decor::after,
+  .form__title--decor::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: @bgInput;
   }
 
   .form__impression-item {
@@ -364,12 +369,13 @@
     margin-bottom: 58px;
   }
 
-  .form__title--attractions {
-    padding: 0 130px;
-  }
-
   .form__title--emotions {
     margin-top: 27px;
+  }
+
+  .form__title--decor::after,
+  .form__title--decor::before {
+    width: 280px;
   }
 
   .form__personality {

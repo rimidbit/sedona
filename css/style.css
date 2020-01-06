@@ -388,6 +388,18 @@ img {
     width: 460px;
   }
 }
+/*
+.decorTitle() {
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: @bgInput;
+  }
+}
+*/
 .nav {
   position: relative;
   font-size: 18px;
@@ -1604,11 +1616,12 @@ img {
     margin-top: 15px;
     margin-bottom: 58px;
   }
-  .form__title--attractions {
-    padding: 0 130px;
-  }
   .form__title--emotions {
     margin-top: 27px;
+  }
+  .form__title--decor::after,
+  .form__title--decor::before {
+    width: 280px;
   }
   .form__personality {
     width: 400px;
