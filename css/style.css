@@ -383,6 +383,12 @@ img {
   padding: 20px 35px;
   display: block;
 }
+.button:hover {
+  background-color: #669ec0;
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 @media screen and (min-width: 760px) {
   .button {
     width: 460px;
@@ -404,7 +410,6 @@ img {
   position: relative;
   font-size: 18px;
   font-weight: 800;
-  background-color: #90b2d0;
   text-transform: uppercase;
 }
 .nav__list {
@@ -418,10 +423,17 @@ img {
   border-bottom: 1px solid #7490a8;
 }
 .nav__link {
+  background-color: #90b2d0;
   color: #fff;
   line-height: 18px;
   display: block;
-  padding: 18px 20px;
+  padding: 18px;
+}
+.nav__link:hover {
+  background-color: #669ec0;
+}
+.nav__link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 .nav__button {
   border: none;
@@ -470,7 +482,15 @@ img {
     margin-right: auto;
   }
   .nav__link {
+    background-color: transparent;
     color: black;
+  }
+  .nav__link:hover {
+    color: #81b3d2;
+    background-color: transparent;
+  }
+  .nav__link:active {
+    color: #766357;
   }
   .nav__logo {
     margin-top: -58px;
@@ -965,6 +985,12 @@ img {
   margin-right: 5px;
   background-color: #90b2d0;
 }
+.footer__social-link:hover {
+  background-color: #669ec0;
+}
+.footer__social-link:active > .footer__social-icon {
+  opacity: 0.3;
+}
 .footer__social-icon {
   fill: #fff;
 }
@@ -980,6 +1006,13 @@ img {
   line-height: 14px;
   text-transform: uppercase;
   margin-right: 10px;
+}
+.footer__developed-link:hover > .footer__developed-icon {
+  fill: #81b3d2;
+}
+.footer__developed-link:active > .footer__developed-icon {
+  fill: #000000;
+  opacity: 0.3;
 }
 .footer__developed-icon {
   width: 30px;
@@ -1319,6 +1352,17 @@ img {
   margin-left: 25px;
   border: transparent;
 }
+.form__contacts-input:hover,
+.form__personality-input:hover {
+  background-color: #e5e5e5;
+}
+.form__contacts-input:focus,
+.form__personality-input:focus {
+  background-color: transparent;
+  outline: 2px solid #e5e5e5;
+  -webkit-box-shadow: 1px 1px 2px 0 #e5e5e5;
+          box-shadow: 1px 1px 2px 0 #e5e5e5;
+}
 .form__contacts {
   margin-bottom: 45px;
 }
@@ -1414,6 +1458,14 @@ img {
   height: 55px;
   background-color: #f2f2f2;
   border-radius: 5%;
+}
+.form__impression-label:hover::before,
+.form__attractions-label:hover::before {
+  background-color: #e5e5e5;
+}
+.form__impression-label:active::before,
+.form__attractions-label:active::before {
+  background-color: #d5d5d5;
 }
 .form__attractions-input:checked + label::after {
   content: url("../img/icon-tick.svg");
