@@ -519,13 +519,15 @@ img {
 }
 .welcome__images {
   position: relative;
-  max-width: 320px;
+  width: 320px;
+  height: 390px;
 }
 .welcome__img-text {
   position: absolute;
   top: 90px;
   left: 20px;
-  max-width: 280px;
+  /*  margin: auto;*/
+  width: 280px;
   height: auto;
 }
 .welcome__title {
@@ -565,6 +567,8 @@ img {
   .welcome__images {
     margin-bottom: 165px;
     /*временная мера*/
+    width: 768px;
+    height: auto;
   }
   .welcome__images--photo,
   .welcome__images--form {
@@ -600,6 +604,9 @@ img {
   }
 }
 @media screen and (min-width: 1280px) {
+  .welcome__images {
+    width: 1280px;
+  }
   .welcome__images--photo,
   .welcome__images--form {
     margin-bottom: 238px;
