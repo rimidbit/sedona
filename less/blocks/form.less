@@ -55,6 +55,18 @@
   border: transparent;
 }
 
+.form__contacts-input:hover,
+.form__personality-input:hover {
+  background-color: #e5e5e5;
+}
+
+.form__contacts-input:focus,
+.form__personality-input:focus {
+  background-color: transparent;
+  outline: 2px solid #e5e5e5;
+  box-shadow: 1px 1px 2px 0 #e5e5e5;
+}
+
 .form__contacts {
   margin-bottom: 45px;
 }
@@ -157,6 +169,16 @@
   height: 55px;
   background-color: @bgInput;
   border-radius: 5%;
+}
+
+.form__impression-label:hover::before,
+.form__attractions-label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.form__impression-label:active::before,
+.form__attractions-label:active::before {
+  background-color: #d5d5d5;
 }
 
 .form__attractions-input:checked + label::after {

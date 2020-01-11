@@ -1,7 +1,6 @@
 .nav {
   position: relative;
   .title();
-  background-color: @colorBlue;
   text-transform: uppercase;
 }
 
@@ -18,10 +17,19 @@
 }
 
 .nav__link {
+  background-color: @colorBlue;
   color: #fff;
   line-height: 18px;
   display: block;
-  padding: 18px 20px;
+  padding: 18px;
+}
+
+.nav__link:hover {
+  background-color: #669ec0;
+}
+
+.nav__link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .nav__button {
@@ -72,12 +80,26 @@
   }
 
   .nav__item:nth-child(2) {
-    margin-left: 25px;
+    margin-left: 41px;
     margin-right: auto;
   }
 
+  .nav__item:last-child {
+    margin-left: 14px;
+  }
+
   .nav__link {
+    background-color: transparent;
     color: black;
+  }
+
+  .nav__link:hover {
+    color: #81b3d2;
+    background-color: transparent;
+  }
+
+  .nav__link:active {
+    color: #766357;
   }
 
   .nav__logo {
@@ -89,12 +111,12 @@
   .nav {
     background-color: white;
     font-size: @fontSize;
-    margin-left: 70px;
-    margin-right: 50px;
+    margin-left: 72px;
+    margin-right: 55px;
   }
 
   .nav__item:nth-child(2) {
-    margin-left: 120px;
+    margin-left: 126px;
   }
 
   .nav__item:nth-child(4) {
