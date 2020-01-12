@@ -673,6 +673,28 @@ img {
   .welcome {
     margin-top: -38px;
   }
+  .welcome__decor-center::after {
+    left: 250px;
+  }
+  .welcome__decor-center::before {
+    right: 250px;
+  }
+  .welcome__decor {
+    margin-top: -38px;
+  }
+  .welcome__decor::after,
+  .welcome__decor::before {
+    width: 430px;
+    height: 57px;
+  }
+  .welcome__decor::after {
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg);
+  }
+  .welcome__decor::before {
+    -webkit-transform: skewY(-5deg);
+            transform: skewY(-5deg);
+  }
   .welcome__images {
     width: 1200px;
   }
@@ -686,6 +708,7 @@ img {
   }
   .welcome__title {
     padding: 0 370px;
+    margin-top: 89px;
   }
   .welcome__text--photo,
   .welcome__text--form {
