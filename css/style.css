@@ -360,13 +360,12 @@ img {
 }
 @media screen and (min-width: 768px) {
   .container {
-    min-width: 768px;
+    max-width: 768px;
   }
 }
 @media screen and (min-width: 1280px) {
   .container {
-    min-width: 1200px;
-    /*    padding: 0 40px;*/
+    max-width: 1200px;
   }
   /* body {
     margin: 0 40px;
@@ -525,6 +524,11 @@ img {
   width: 320px;
   height: 390px;
 }
+.welcome__images--form,
+.welcome__images--photo {
+  height: 160px;
+  overflow: hidden;
+}
 .welcome__img-text {
   position: absolute;
   top: 90px;
@@ -532,6 +536,14 @@ img {
   /*  margin: auto;*/
   width: 280px;
   height: auto;
+}
+.welcome__img--small {
+  margin-top: -230px;
+}
+.welcome__img-text--small {
+  width: 230px;
+  top: 50px;
+  left: 45px;
 }
 .welcome__decor-center {
   height: 27px;
@@ -560,12 +572,12 @@ img {
   font-size: 18px;
   font-weight: 800;
   margin-top: 38px;
-  padding: 0 33px;
+  padding: 0 30px;
   line-height: 26px;
 }
 .welcome__title--form,
 .welcome__title--photo {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 .welcome__text {
   margin-top: 27px;
@@ -592,8 +604,9 @@ img {
 @media screen and (min-width: 768px) {
   .welcome__images {
     margin-bottom: 38px;
-    width: 768px;
-    height: auto;
+    width: 100%;
+    max-width: 768px;
+    /*    height: auto;*/
   }
   .welcome__decor {
     position: relative;
@@ -632,16 +645,21 @@ img {
   }
   .welcome__images--photo,
   .welcome__images--form {
-    margin-bottom: 190px;
+    height: 290px;
+    margin-bottom: 0;
   }
   .welcome__img-text {
     width: auto;
     top: 77px;
     left: 155px;
   }
+  .welcome__img-text--small {
+    width: 460px;
+    top: 94px;
+  }
   .welcome__title {
     margin-top: 79px;
-    padding: 0 170px;
+    padding: 0 160px;
     line-height: 26px;
     font-size: 21px;
   }
@@ -654,6 +672,7 @@ img {
   }
   .welcome__title--form,
   .welcome__title--photo {
+    margin-top: 75px;
     padding: 0 150px;
     font-size: 30px;
   }
@@ -682,6 +701,13 @@ img {
   .welcome__decor {
     margin-top: -38px;
   }
+  /*
+  .welcome__decor--small {
+    margin-top: -28px;
+  }*/
+  .welcome__decor-center--small {
+    margin-top: -40px;
+  }
   .welcome__decor::after,
   .welcome__decor::before {
     width: 430px;
@@ -696,15 +722,23 @@ img {
             transform: skewY(-5deg);
   }
   .welcome__images {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+  }
+  .welcome__img--small {
+    margin-top: -218px;
   }
   .welcome__images--photo,
   .welcome__images--form {
-    margin-bottom: 238px;
+    height: 300px;
+    margin-bottom: 112px;
   }
   .welcome__img-text {
     top: 78px;
     left: 370px;
+  }
+  .welcome__img-text--small {
+    top: 100px;
   }
   .welcome__title {
     padding: 0 370px;
@@ -872,7 +906,8 @@ img {
             justify-content: flex-end;
   }
   .advantages__text--background-gray {
-    padding-top: 44px;
+    padding-top: 46px;
+    width: 33.33%;
   }
   .advantages__items .advantages__title {
     padding: 0 50px;
@@ -983,9 +1018,9 @@ img {
   }
   .recommendations__item {
     margin-top: 0;
-    padding: 0 44px;
+    padding: 0 45px;
     text-align: center;
-    width: 33%;
+    width: 33.33%;
   }
   .recommendations__title {
     font-size: 21px;
@@ -999,7 +1034,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 0;
+    margin-top: 2px;
     margin-bottom: 25px;
   }
   .recommendations__description {
@@ -1039,6 +1074,9 @@ img {
   .recommendations__description--new-line {
     display: block;
   }
+  .recommendations__item {
+    padding: 0 46px;
+  }
 }
 .hotel-selection {
   margin-top: 35px;
@@ -1058,9 +1096,12 @@ img {
   padding: 0 9px;
   line-height: 24px;
 }
+.hotel-selection img {
+  max-width: 768px;
+}
 @media screen and (min-width: 768px) {
   .hotel-selection {
-    margin-top: 80px;
+    margin-top: 77px;
     margin-bottom: 58px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1091,6 +1132,9 @@ img {
   }
   .hotel-selection__description {
     margin-bottom: 47px;
+  }
+  .hotel-selection img {
+    max-width: 1200px;
   }
 }
 .footer {
@@ -1180,7 +1224,7 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 37px 60px;
+    margin: 31px 60px;
   }
   .footer__heshteg {
     margin-bottom: 0;
@@ -1192,6 +1236,12 @@ img {
 @media screen and (min-width: 1280px) {
   .footer {
     margin: 33px 120px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer {
+    margin-left: 120px;
+    margin-right: 120px;
   }
 }
 .main-photo {
@@ -1238,10 +1288,10 @@ img {
     position: relative;
     margin-bottom: 0;
   }
-  .main-photo__images {
+  /* .main-photo__images {
     width: 640px;
     height: 400px;
-  }
+  }*/
   .main-photo__title {
     font-size: 14px;
     margin-top: 0;
