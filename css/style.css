@@ -523,35 +523,43 @@ img {
   font-size: 0;
 }
 .welcome__images {
-  position: relative;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   width: 320px;
   height: 390px;
+}
+@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .welcome__images {
+    background-image: url("../img/bg-welcome-mobile@2x.jpg");
+  }
 }
 .welcome__images--form,
 .welcome__images--photo {
   height: 160px;
-  overflow: hidden;
+  background-position: center bottom;
 }
 .welcome__img-text {
-  position: absolute;
-  top: 90px;
-  left: 20px;
-  /*  margin: auto;*/
+  margin-top: 90px;
+  margin-right: 20px;
+  margin-left: 20px;
   width: 280px;
   height: auto;
 }
-.welcome__img--small {
+/*.welcome__img--small {
   margin-top: -230px;
-}
+}*/
 .welcome__img-text--small {
   width: 230px;
-  top: 50px;
-  left: 45px;
+  margin-top: 50px;
+  margin-right: 45px;
+  margin-left: 45px;
 }
 .welcome__decor-center {
   height: 27px;
-  margin-top: -27px;
+  margin-top: 59px;
   position: relative;
+}
+.welcome__decor-center--small {
+  margin-top: 42px;
 }
 .welcome__decor-center::after,
 .welcome__decor-center::before {
@@ -590,7 +598,7 @@ img {
   font-size: 14px;
 }
 .welcome__text--photo {
-  padding: 0 20px;
+  padding: 0 24px;
   margin-top: 25px;
   margin-bottom: 50px;
   line-height: 24px;
@@ -606,10 +614,11 @@ img {
 }
 @media screen and (min-width: 768px) {
   .welcome__images {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     margin-bottom: 38px;
     width: 100%;
     max-width: 768px;
-    /*    height: auto;*/
+    height: 518px;
   }
   .welcome__decor {
     position: relative;
@@ -634,7 +643,10 @@ img {
             transform: skewY(-4deg);
   }
   .welcome__decor-center {
-    margin-top: -41px;
+    margin-top: 50px;
+  }
+  .welcome__decor-center--small {
+    margin-top: 75px;
   }
   .welcome__decor-center::after,
   .welcome__decor-center::before {
@@ -653,15 +665,16 @@ img {
   }
   .welcome__img-text {
     width: auto;
-    top: 77px;
-    left: 155px;
+    margin-top: 77px;
+    margin-right: 155px;
+    margin-left: 155px;
   }
   .welcome__img-text--small {
     width: 460px;
-    top: 94px;
+    margin-top: 94px;
   }
   .welcome__title {
-    margin-top: 179px;
+    margin-top: 50px;
     padding: 0 160px;
     line-height: 26px;
     font-size: 21px;
@@ -691,6 +704,11 @@ img {
     display: block;
   }
 }
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .welcome__images {
+    background-image: url("../img/bg-welcome-tablet@2x.jpg");
+  }
+}
 @media screen and (min-width: 1280px) {
   .welcome {
     margin-top: -38px;
@@ -709,7 +727,7 @@ img {
     margin-top: -28px;
   }*/
   .welcome__decor-center--small {
-    margin-top: -40px;
+    margin-top: 79px;
   }
   .welcome__decor::after,
   .welcome__decor::before {
@@ -725,27 +743,30 @@ img {
             transform: skewY(-5deg);
   }
   .welcome__images {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
     width: 100%;
     max-width: 1200px;
   }
+  /*
   .welcome__img--small {
     margin-top: -218px;
-  }
+  }*/
   .welcome__images--photo,
   .welcome__images--form {
     height: 300px;
     margin-bottom: 112px;
   }
   .welcome__img-text {
-    top: 78px;
-    left: 370px;
+    margin-top: 78px;
+    margin-right: 370px;
+    margin-left: 370px;
   }
   .welcome__img-text--small {
-    top: 100px;
+    margin-top: 100px;
   }
   .welcome__title {
     padding: 0 370px;
-    margin-top: 178px;
+    /*    margin-top: 178px;*/
   }
   .welcome__title--photo {
     margin-top: 108px;
@@ -762,6 +783,11 @@ img {
   }
   .welcome__text--photo {
     margin-bottom: 70px;
+  }
+}
+@media screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (min-width: 1280px) and (min-resolution: 1.5dppx) {
+  .welcome__images {
+    background-image: url("../img/bg-welcome-desktop@2x.jpg");
   }
 }
 .advantages__item {
@@ -1954,15 +1980,18 @@ img {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    /*    justify-content: center;*/
   }
   .form__attractions-item {
-    margin-right: 70px;
+    margin-left: 10px;
+    margin-right: 60px;
     padding-bottom: 45px;
     width: 200px;
     /*flex-basis: 50%;*/
+  }
+  .form__attractions-item:nth-child(2),
+  .form__attractions-item:nth-child(4) {
+    margin-left: 0;
   }
   .form__placeholder {
     display: block;

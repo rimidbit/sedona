@@ -347,14 +347,20 @@
     padding-left: 88px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+/*    justify-content: center;*/
   }
 
   .form__attractions-item {
-    margin-right: 70px;
+    margin-left: 10px;
+    margin-right: 60px;
     padding-bottom: 45px;
     width: 200px;
     /*flex-basis: 50%;*/
+  }
+
+  .form__attractions-item:nth-child(2),
+  .form__attractions-item:nth-child(4) {
+    margin-left: 0;
   }
 
   .form__placeholder {
