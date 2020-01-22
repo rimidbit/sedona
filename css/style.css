@@ -1636,12 +1636,15 @@ img {
     padding: 0 330px;
   }
   .video__item {
+    margin-right: auto;
     margin-bottom: 120px;
+    margin-left: auto;
+    width: 800px;
   }
   .video__nav {
     max-width: 800px;
     height: 95px;
-    left: 140px;
+    left: 0;
   }
   .video__fullscreen {
     margin-right: 30px;
@@ -1775,8 +1778,14 @@ img {
 }
 .form__contacts-input,
 .form__personality-input {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  /*  padding-top: 22px;
+  padding-bottom: 22px;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-left: 22px;
   background-color: #f2f2f2;
 }
@@ -2054,6 +2063,9 @@ img {
   .form__personality {
     width: 400px;
   }
+  .form__personality-input {
+    height: 60px;
+  }
   .form__contacts {
     margin-bottom: 36px;
   }
@@ -2078,6 +2090,7 @@ img {
   }
   .form__contacts-input {
     width: 320px;
+    height: 60px;
     padding-left: 25px;
   }
   .form__contacts-label {

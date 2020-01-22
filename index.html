@@ -5,6 +5,8 @@
 		<title>HTML Academy: Седона</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody()</script>
 	</head>
   <body>
     <div class="container">
@@ -61,6 +63,9 @@
               <p class="advantages__description">седона не атракцион для туристов, там течет своя жизнь</p>
             </div>
             <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/main-city-mobile@1x.webp, img/main-city-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1279px)" srcset="img/main-city-tablet@1x.webp, img/main-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-city-desktop@1x.webp, img/main-city-desktop@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/main-city-mobile@1x.jpg, img/main-city-mobile@2x.jpg 2x">
               <source media="(max-width: 1279px)" srcset="img/main-city-tablet@1x.jpg, img/main-city-tablet@2x.jpg 2x">
               <img src="img/main-city-desktop@1x.jpg" srcset="img/main-city-desktop@2x.jpg 2x" alt="фото городка">
@@ -87,6 +92,9 @@
               <p class="advantages__description">да, по нему мжжно пройти! если вы осмелитесь конечно</p>
             </div>
             <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/main-bridge-mobile@1x.webp, img/main-bridge-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1279px)" srcset="img/main-bridge-tablet@1x.webp, img/main-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main-bridge-desktop@1x.webp, img/main-bridge-desktop@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/main-bridge-mobile@1x.jpg, img/main-bridge-mobile@2x.jpg 2x">
               <source media="(max-width: 1279px)" srcset="img/main-bridge-tablet@1x.jpg, img/main-bridge-tablet@2x.jpg 2x">
               <img src="img/main-bridge-desktop@1x.jpg" srcset="img/main-bridge-desktop@2x.jpg 2x" alt="фото моста дьявола">
@@ -116,6 +124,9 @@
           <a href="#" class="button">найти гостиницу</a>
         </div>
         <picture>
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/bg-map-mobile@1x.webp, img/bg-map-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1279px)" srcset="img/bg-map-tablet@1x.webp, img/bg-map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/bg-map-desktop@1x.webp, img/bg-map-desktop@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/bg-map-mobile@1x.jpg, img/bg-map-mobile@2x.jpg 2x">
           <source media="(max-width: 1279px)" srcset="img/bg-map-tablet@1x.jpg, img/bg-map-tablet@2x.jpg 2x">
           <img src="img/bg-map-desktop@1x.jpg" srcset="img/bg-map-desktop@2x.jpg" class="map" alt="карта проезда в седону">
@@ -143,7 +154,7 @@
         <div class="footer__developed">
           <p class="footer__developed-text">разработано</p>
           <a href="#" class="footer__developed-link">
-            <svg class="footer__developed-icon" width="28px" height="auto">
+            <svg class="footer__developed-icon">
               <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>

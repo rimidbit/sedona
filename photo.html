@@ -55,6 +55,9 @@
         <div class="main-photo">
           <a href="#">
             <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.webp, img/photo-sunset-mobile@2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1279px)" srcset="img/photo-sunset-tablet@1x.webp, img/photo-sunset-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg, img/photo-sunset-mobile@2x.jpg 2x">
               <source media="(max-width: 1279px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x">
               <img class="main-photo__images" src="img/photo-sunset-desktop@1x.jpg" srcset="img/photo-sunset-desktop@2x.jpg" alt="дорога в седону на закате">
@@ -77,6 +80,9 @@
           <div class="photos__item">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.webp, img/photo-cactus-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1279px)" srcset="img/photo-cactus-tablet@1x.webp, img/photo-cactus-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.jpg, img/photo-cactus-mobile@2x.jpg 2x">
                 <source media="(max-width: 1279px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x">
                 <img class="main-photo__images" src="img/photo-cactus-desktop@1x.jpg" srcset="img/photo-cactus-desktop@2x.jpg" alt="растительность седоны">
@@ -98,6 +104,9 @@
           <div class="photos__item">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.webp, img/photo-roads-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1279px)" srcset="img/photo-roads-tablet@1x.webp, img/photo-roads-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg, img/photo-roads-mobile@2x.jpg 2x">
                 <source media="(max-width: 1279px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
                 <img class="main-photo__images" src="img/photo-roads-desktop@1x.jpg" srcset="img/photo-roads-desktop@2x.jpg" alt="дорога на север">
@@ -119,6 +128,9 @@
           <div class="photos__item">
             <a href="#">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.webp, img/photo-bridge-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1279px)" srcset="img/photo-bridge-tablet@1x.webp, img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bridge-desktop@1x.webp, img/photo-bridge-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg, img/photo-bridge-mobile@2x.jpg 2x">
                 <source media="(max-width: 1279px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
                 <img class="main-photo__images" src="img/photo-bridge-desktop@1x.jpg" srcset="img/photo-bridge-desktop@2x.jpg" alt="Мост дьявола">
@@ -143,9 +155,12 @@
           <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           <div class="video__item">
             <picture>
+              <source type="image/webp" media="(max-width: 767px)" srcset="img/video-mobile_1x.webp, img/video-mobile_2x.webp 2x">
+              <source type="image/webp" media="(max-width: 1279px)" srcset="img/video-tablet_1x.webp, img/video-tablet_2x.webp 2x">
+              <source type="image/webp" srcset="img/video-desktop_1x.webp, img/video-desktop_2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/video-mobile@1x.jpg, img/video-mobile@2x.jpg 2x">
               <source media="(max-width: 1279px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
-              <img class="video__img" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x" alt="Мост дьявола">
+              <img class="video__img" src="img/video-desktop@1x.jpg" srcset="img/video-desktop@2x.jpg" alt="видео">
             </picture>
             <div class="video__nav">
               <button type="button" class="video__reply">
@@ -193,7 +208,7 @@
         <div class="footer__developed">
           <p class="footer__developed-text">разработано</p>
           <a href="#" class="footer__developed-link">
-            <svg class="footer__developed-icon" width="28px" height="auto">
+            <svg class="footer__developed-icon">
               <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
             </svg>
           </a>

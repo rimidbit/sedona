@@ -106,8 +106,10 @@
 
 .form__contacts-input,
 .form__personality-input {
-  padding-top: 22px;
-  padding-bottom: 22px;
+/*  padding-top: 22px;
+  padding-bottom: 22px;*/
+  display: flex;
+  align-items: center;
   padding-left: 22px;
   background-color: @bgInput;
 }
@@ -410,6 +412,10 @@
     width: 400px;
   }
 
+  .form__personality-input {
+    height: 60px;
+  }
+
   .form__contacts {
     margin-bottom: 36px;
   }
@@ -427,6 +433,7 @@
 
   .form__contacts-input {
     width: 320px;
+    height: 60px;
     padding-left: 25px;
   }
 
